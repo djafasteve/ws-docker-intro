@@ -1,19 +1,19 @@
 ## Docker Images :
 
-DOcker Containers are running docker images.
+Docker Containers are running docker images.
 
 Images are defined to be ran in the same way for each containers.
 
 Multiples containers can run the same docker image, even on the same server.
 
-#### Using an existing Image
+### Using an existing Image
 
-##### DockerHub 
+#### DockerHub 
 
 [Dockerhub](hub.docker.com) is the classical place were you get existing image created by the community or by the companies publishing an image of their product.
 
 
-##### Pulling an Image.
+#### Pulling an Image.
 
 Let's get a **postgresql** image.
 
@@ -60,3 +60,52 @@ postgres                                        latest              f88dfa384cc4
 hello-world                                     latest              fce289e99eb9        10 months ago       1.84kB
 
 ```
+
+Those are just the images present on your computer, there is no container associated with them for the moment.
+
+
+#### Running an image
+
+In order to have a container running based on an image you should run the following command.
+
+```
+sudo docker run postgres
+```
+
+An now you have a terminal with a lots of log line running.
+
+This is not optimal to work. Let's kill it with **Ctrl+C**.
+
+
+And run a more appropriate command to have it run like a daemon.
+
+```
+sudo docker run -d postgres
+```
+
+It will return a strange string looking like a SHA-256 result.
+
+Now your container is running by itself as a daemon on your computer.
+
+
+We can see all the running container on your computer with the following command :
+
+```
+sudo docker container list
+```
+
+And get a result looking like the following 
+
+```
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                        PORTS                    NAMES
+28e965e38275        postgres            "docker-entrypoint.s…"   14 seconds ago      Up 13 seconds                 5432/tcp                 cool_banach
+```
+
+#### Kill the container
+
+You can now kill the container, by replacing the <container_id> with the correct id you get from the previous command
+
+```
+sudo docker kill <container_id>
+```
+
