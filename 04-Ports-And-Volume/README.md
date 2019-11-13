@@ -73,7 +73,7 @@ There is something called volume that allow to "mount" a folder of the local fil
 So in order to persist our data of the postgres table, we should add a volume to the place were postgres store its data.
 
 ```
-sudo docker run --name my-ov-postgres -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
+sudo docker run --rm --name my-ov-postgres -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
 ```
 
 The volume will then use your ~/docker/volumes/postgres directory of the local host as mounted into your container.
@@ -100,7 +100,7 @@ sudo docker kill my-ov-postgres
 And re-run the postgresql container
 
 ```
-sudo docker run --name my-ov-postgres -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
+sudo docker run --rm --name my-ov-postgres -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
 ```
 
 And re-run the select query :
