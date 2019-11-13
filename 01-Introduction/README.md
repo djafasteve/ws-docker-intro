@@ -17,5 +17,7 @@ First of all, we need to get clear of what docker is :
 
 What is the difference between containers and Virtual Machine  ?
 
-![Container](img/container-vs-vm.png) ![VM](img/vm-vs-container.png)
+| | |
+|-|-|
+| ![Container](img/container-vs-vm.png) | ![VM](img/vm-vs-container.png) |
 From the old docker documentation.
