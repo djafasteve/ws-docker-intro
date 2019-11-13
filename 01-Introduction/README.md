@@ -20,4 +20,7 @@ What is the difference between containers and Virtual Machine  ?
 | | |
 |-|-|
 | ![Container](img/container-vs-vm.png) | ![VM](img/vm-vs-container.png) |
+
+
+
 From the old docker documentation.
