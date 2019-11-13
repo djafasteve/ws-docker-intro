@@ -30,15 +30,21 @@ Let's checkout the Dockerfile of this one:
 https://github.com/tiangolo/uwsgi-nginx-docker/blob/master/python3.7/Dockerfile
 
 ...Let's go all the way to the source of the image:
+
 https://github.com/docker-library/python/blob/master/3.7/stretch/Dockerfile
+
 .......ALL THE WAY I SAID :
 https://github.com/docker-library/buildpack-deps/blob/master/stretch/Dockerfile
+
 ..............................
 https://github.com/docker-library/buildpack-deps/tree/master/stretch/scm
+
 ......................................................
 https://github.com/docker-library/buildpack-deps/blob/master/stretch/curl/Dockerfile
+
 ........................................................................................................
 https://github.com/debuerreotype/docker-debian-artifacts/blob/fd091f0a2aa0f469ee1ff991cb99748025d567f8/stretch/Dockerfile
+
 ................................................................................................................................
 https://hub.docker.com/_/scratch/
 
