@@ -111,3 +111,15 @@ psql -h localhost -U postgres -d postgres -f selecttable.sql
 ```
 
 **Have we persisted our data ?**
+
+
+### Connect with a Shell into a container
+
+
+It may come handy to connect into a shell of a container:
+
+```
+sudo docker exec -i -t my-ov-postgres /bin/bash
+```
+
+
