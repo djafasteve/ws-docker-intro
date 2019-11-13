@@ -58,7 +58,7 @@ https://docs.docker.com/engine/reference/builder/
 
 
 
-In the root directory "05-Dockerfile-and-building-an-image" create a new file called "Dockerfile" and on top of it we will add
+In the root directory "05-Dockerfile-and-building-an-image" create a new file called "Dockerfile" and on the top of it we will add
 
 ```
 FROM tiangolo/uwsgi-nginx-flask:python3.7
