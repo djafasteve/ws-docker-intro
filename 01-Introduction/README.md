@@ -23,4 +23,4 @@ What is the difference between containers and Virtual Machine  ?
 
 
 
-From the old docker documentation.
+From the docker documentation.
